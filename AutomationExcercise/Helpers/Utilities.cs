@@ -42,6 +42,11 @@ namespace AutomationExcercise.Helpers
 
         }
 
+        internal bool? TextPresentInElemen(object sEARCHED, object pRODUCTS)
+        {
+            throw new NotImplementedException();
+        }
+
         public void DropdownSelect(By select, string option)
         {
             WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(15));

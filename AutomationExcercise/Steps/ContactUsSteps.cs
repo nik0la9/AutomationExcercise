@@ -27,6 +27,8 @@ namespace AutomationExcercise.Steps
             ut.EnterTextInElement(cup.email, TestConstants.Username);
             ut.EnterTextInElement(cup.subject, TestConstants.Subject);
             ut.EnterTextInElement(cup.message, TestConstants.Message);
+            string path = @"C:\Users\Nikola\Downloads\Product Support Engineer Cleverbit.pdf";
+            Driver.FindElement(cup.uploadBtn).SendKeys(path);
         }
         
         [When(@"submits contact us form")]

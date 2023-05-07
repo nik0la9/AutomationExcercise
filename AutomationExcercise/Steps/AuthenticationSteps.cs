@@ -84,6 +84,29 @@ namespace AutomationExcercise.Steps
             Assert.True(ut.TextPresentInElement(message),"User did NOT get expected success message");
             ut.ClickOnElement(acp.continiueBtn);
         }
+        [Given(@"user registers new account with '(.*)' name")]
+        public void GivenUserRegistersNewAccountWithName(string name)
+        {
+            GivenUserOpensSignInPage();
+            GivenEntersNameAndValidEmailAddress(name);
+            GivenUserClicksOnSignUpButton();
+            WhenUserFillsInAllRequiredFields();
+            WhenSubmitsTheSignupForm();
+            AccountCreatedPage acp = new AccountCreatedPage(Driver);
+            ut.ClickOnElement(acp.continiueBtn);
+        }
+
+        [When(@"user selects option for deleting the account")]
+        public void WhenUserSelectsOptionForDeletingTheAccount()
+        {
+             ut.ClickOnElement(hp.deleteAcc);
+        }
+
+        [Then(@"account will be deleted with '(.*)' message")]
+        public void ThenAccountWillBeDeletedWithMessage(string message)
+        {
+            Assert.True(ut.TextPresentInElement(message), "Account is not deleted");
+        }
 
     }
 }

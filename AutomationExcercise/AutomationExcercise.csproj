@@ -84,12 +84,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\Base.cs" />
+    <Compile Include="Helpers\ProductData.cs" />
     <Compile Include="Helpers\TestConstants.cs" />
     <Compile Include="Helpers\Utilities.cs" />
     <Compile Include="Pages\AccountCreatedPage.cs" />
     <Compile Include="Pages\AuthenticationPage.cs" />
     <Compile Include="Pages\ContactUsPage.cs" />
     <Compile Include="Pages\HeaderPage.cs" />
+    <Compile Include="Pages\ProductsDetailsPage.cs" />
     <Compile Include="Pages\ProductsPage.cs" />
     <Compile Include="Pages\SignUpPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

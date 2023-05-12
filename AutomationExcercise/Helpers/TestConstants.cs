@@ -28,5 +28,6 @@ namespace AutomationExcercise.Helpers
 
         //products page search message
         public const string Searchtext = "t-shirt";
+        public const string Searchtext2 = "Top";
     }
 }
